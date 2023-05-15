@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a test application.
 
-Things you may want to cover:
 
-* Ruby version
+Please close this repo and run the following command.
 
-* System dependencies
+1. bin/setup
+2. bin.dev
 
-* Configuration
+The seed will create an admin user with username: admin@drshift.com, password: admin123
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
