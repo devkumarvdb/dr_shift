@@ -2,7 +2,7 @@
 
 This is a test application.
 
-Please close this repo and run the following command.
+Please clone this repo and run the following command.
 
 1. bin/setup
 2. bin.dev
