@@ -1,0 +1,9 @@
+
+.container
+  .row
+    .col
+      %h1.mt-4 Invitation to join our platform
+      %p Hello!
+      %p.lead You have been invited to join our platform. Click the button below to sign up:
+      = link_to "Sign Up", new_user_registration_url(referral_email: @referral.email), class: "btn btn-primary", target: "_blank"
+      %p.mt-4 We look forward to having you on board!

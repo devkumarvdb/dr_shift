@@ -1,0 +1,6 @@
+- if current_user.has_role?(:admin)
+  = render partial: "admin_user_home"
+- elsif current_user.has_role?(:referral)
+  = render partial: "referral_user_home"
+- else
+  = render partial: "user_home"

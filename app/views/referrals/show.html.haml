@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @referral.email
+%p
+  %b Status:
+  = @referral.status
+%p
+  %b Resend count:
+  = @referral.resend_count
+%p
+  %b Token:
+  = @referral.token
+%p
+  %b User:
+  = @referral.user
+
+= link_to 'Edit', edit_referral_path(@referral)
+\|
+= link_to 'Back', referrals_path

@@ -1,0 +1,12 @@
+= form_for @referral, class: 'my-4' do |f|
+  - if @referral.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@referral.errors.count, "error")} prohibited this referral from being saved:"
+      %ul
+        - @referral.errors.full_messages.each do |message|
+          %li= message
+  .mb-3
+    = f.label :email, class: "form-label"
+    = f.email_field :email, class: "form-control", require: true
+  = f.submit "Send", class: "btn btn-primary"
+  = link_to 'Back', dashboard_path, class: "btn btn-secondary"

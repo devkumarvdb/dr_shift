@@ -1,0 +1,26 @@
+.row.justify-content-center
+  .col-8
+    .row
+      .col-6
+        %h3 List of Referrels Sent
+
+.row.justify-content-center
+  .col-8
+    - if @referrals.empty?
+      %tr
+        %td No Referrals
+    - else
+      %table.table.table-striped
+        %thead
+          %tr
+            %th Email
+            %th Status
+            %th Actions
+        %tbody
+          - @referrals.each do |referral|
+            %tr
+              %td= referral.email
+              %td= referral.status.titleize
+              %td
+                - if show_resend_referral_link?(referral)
+                  = link_to "Resend Invite", resend_referral_path(referral), method: :post, class: "btn btn-sm btn-success"

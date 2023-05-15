@@ -28,7 +28,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -54,9 +54,23 @@ gem "devise"
 # Use haml for views
 gem "haml-rails"
 
+# Use boostrap for styling
+gem 'bootstrap', '~> 5.3.0.alpha3'
+
+# Use jquery for javascript
+gem 'jquery-rails'
+
+# Use rolify for roles
+gem "rolify"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+  # Use letter_opener for email testing
+  gem "letter_opener"
+
+  gem "pry"
 end
 
 group :development do
